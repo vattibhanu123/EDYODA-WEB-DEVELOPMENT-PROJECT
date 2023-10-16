@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    //links of external css and google fonts
+    <link rel="stylesheet" href="style.css" /> <!-- Link to an external CSS stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet" /> <!-- Link to Google Fonts for the 'Poppins' font family -->
+    <title>Kafene</title> <!-- Page title displayed in the browser tab -->
+</head>
+<body>
+  <!-- implementation of top bar -->
+    <div class="maintopbar">
+        <div class="logoimage">
+            <b><img src="https://edu-web-fundamentals.web.app/static/media/logo.58169365.png" alt="logo" /></b>
+            <p class="brand"><a href="index.html">Kafene</a></p>
+        </div>
+        <!-- navigation links -->
+        <nav> 
+            <a href="order.html">Orders</a><br>
+            <a href="product.html">Products</a><br>
+            <a href="users.html">Users</a>
+        </nav>
+    </div>
+    <!--body of the webpage(login form) -->
+    <div class="maincontent">      
+        <form id="form_id" method="post" class="LoginPage_LoginForm__3_wtJ" name="myform">  
+            <h1>Sign In</h1> 
+            <input class="signupform" type="text" name="username" id="username" placeholder="Enter Username"/>
+            <input class="signupform" type="password" name="password" id="password" placeholder="Enter Password" />     
+            <input class="submitbtn" type="button" value="Login" id="submit" onclick="verify()" />
+
+        </form>
+    </div>
+    <!-- link of external js file -->
+    <script src="./index.js"></script>
+    
+</body>
+</html>
